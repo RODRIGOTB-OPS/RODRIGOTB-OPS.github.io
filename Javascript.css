@@ -1,0 +1,30 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Evita que se envíe el formulario
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+
+        if (!nombre || !email || !password) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        const usuario = {
+            nombre: nombre,
+            email: email,
+            password: password // En apps reales nunca se guarda así, solo para ejemplo
+        };
+
+        // Guardar en Local Storage
+        let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+        usuarios.push(usuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+        alert("Usuario guardado en Local Storage correctamente.");
+        form.reset();
+    });
+});

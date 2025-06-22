@@ -1,0 +1,111 @@
+h1 {
+    color: #923030; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    font-style: italic; /* Estilo de fuente en cursiva */
+    font-family: FUENTEBONITA; /* Familia de fuentes */
+    font-size: 35px; /* Tamaño de la fuente */
+    text-decoration: wavy; /* Decoración del texto con línea ondulada */
+    font-weight: bold; /* Texto en negrita */
+    background-color: #fcca89; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+    border-style: solid;
+    border-width: 4px;
+    border-top-color: black; /* Color del borde */
+    border-left-color: rgb(211, 45, 45); /* Color del borde */
+    border-right-color: rgb(204, 132, 132); /* Color del borde */
+    border-bottom-color: rgb(147, 3, 3); /* Color del borde */
+    border-radius: 20px;
+}
+.li1 {
+    color: #923030; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    font-style: italic; /* Estilo de fuente en cursiva */
+    font-family: FUENTEBONITA; /* Familia de fuentes */
+    font-size: 20px; /* Tamaño de la fuente */
+    text-decoration: wavy; /* Decoración del texto con línea ondulada */
+    font-weight: bold; /* Texto en negrita */
+    background-color: #fcca89; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+}
+
+.li2 {
+    color: #a53b3ba9;
+    text-align: center;
+    font-style: italic;
+    font-family: FUENTEBONITA;
+    font-size: 20px;
+    text-decoration: wavy;
+    font-weight: bold;
+    background-color: #f9bf74; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+}
+
+.li3 {
+    color: #4a1111;
+    text-align: center;
+    font-style: italic;
+    font-family: FUENTEBONITA;
+    font-size: 20px;
+    text-decoration: wavy;
+    font-weight: bold;
+    background-color: #ebab58; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+}
+.li4 {
+    color: #030000;
+    text-align: justify;
+    font-style: italic;
+    font-family: FUENTEBONITA2;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
+    background-color: #ff9307; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+}
+.li5 {
+    color: #fb2222a9;
+    text-align: center;
+    font-style: italic;
+    font-family: FUENTEBONITA;
+    font-size: 20px;
+    text-decoration: wavy;
+    font-weight: bold;
+    background-color: #fdd69c; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 300px; /* Ancho del elemento */
+h1, h2 {
+    color: #b22222;
+    font-family: FUENTEBONITA2;
+    font-size: 40px;
+}
+
+/* Estilos para los párrafos dentro de la lista */
+ol li p, ul li p {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin: 5px 0;
+    font-family: FUENTEBONITA2;
+}

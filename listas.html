@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <title>Receta para Pay de Queso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estlo.css">
+    <link rel="icon" href="/ICON.jpg" type="image/jpg">
+    <script src="registro.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .carrusel {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+        }
+
+        .slide.activo {
+            display: block;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            background-color: rgba(255,255,255,0.7);
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            user-select: none;
+            transition: background-color 0.3s;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Receta para Pay de Queso</h1>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carrusel">
+            <img src="paydequeso.jpg" alt="Pay de queso 1" class="slide activo">
+            <img src="Paydequeso2.jpg" alt="Pay de queso 2" class="slide">
+            <img src="Paydequeso3.jpg" alt="Pay de queso 3" class="slide">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+
+        <h2 class="subtitulo">Ingredientes</h2>
+        <div class="ingredientes">
+            <div class="item">
+                <a href="https://super.walmart.com.mx/ip/galletas-marias-gamesa-3-rollos-de-144-g-c-u/00750100063335?srsltid=AfmBOort83SG31MkHnlT5NjIk-CUlpHumovoj2C212ko2awePe2wGCUZ" target="_blank">
+                    <img src="galletas.jpg.jpeg" alt="Galletas molidas">
+                </a>
+                <p>150 g de galletas molidas</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/content/lacteos/mantequilla-y-margarina/120006_120098?srsltid=AfmBOorfuWQa6fyp0iaNd3yylBaEWjOpAUEJpg1i30kf2GA9htNq5uAh" target="_blank">
+                    <img src="mantequilla.jpg.webp" alt="Mantequilla">
+                </a>
+                <p>100 g de mantequilla derretida</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/browse/abarrotes/leche/condensada/120005_120077_120250?srsltid=AfmBOoruHMu0sehrzun4B_Z7Cbcisd9zEA7pwyKMUSI2_I-OXAqN_M7p" target="_blank">
+                    <img src="leche_condensada.jpg.webp" alt="Leche condensada">
+                </a>
+                <p>1/2 lata de leche condensada</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/browse/abarrotes/leche/evaporada/120005_120077_120245?srsltid=AfmBOopXnH-VWPCkA4g04um7pS0bS9tmmpCSJVkOBlkZ7CidUWN23vL2" target="_blank">
+                    <img src="leche_evaporada.jpg.jpeg" alt="Leche evaporada">
+                </a>
+                <p>1 lata de leche evaporada</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/ip/media-crema-lala-250-ml/00750102051529" target="_blank">
+                    <img src="media_crema.jpg.jpeg" alt="Media crema">
+                </a>
+                <p>1 caja de media crema</p>
+            </div>
+            <div class="item">
+                <a href="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1mM5lIRgbvo5azEbLjr8yhb9nXCPxpS0Wc8bkkPH_-hHvmPBUylrFGsSqh5lxMwCqcXNEgpKSB3skNJ-ZQiqysq9HuRNpB7o4NKwGzSCb63JkOsW-3IUVhQ" target="_blank">
+                    <img src="vainilla.jpg.jpg" alt="Vainilla">
+                </a>
+                <p>20 ml de esencia de vainilla</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/ip/huevo-blanco-bachoco-fresco-30-pzas/00750110152551" target="_blank">
+                    <img src="huevos.jpg.jpeg" alt="Huevos">
+                </a>
+                <p>4 huevos</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/browse/lacteos/quesos/queso-crema/120006_2430107_120130?srsltid=AfmBOor60ZEORxVQ-Cd2EgTNTCg4zEhXgnPRadn5IYuN5bFfL0dmJmGo" target="_blank">
+                    <img src="queso_crema.jpg.jpg" alt="Queso crema">
+                </a>
+                <p>1 barra de queso crema</p>
+            </div>
+            <div class="item">
+                <a href="https://super.walmart.com.mx/ip/fecula-de-maiz-maizena-original-425-g/00750100511042?srsltid=AfmBOor_huctmZtbNqTWWQq9Jl1WRMd_yH7PD15DPODMCXGAojA7lpwN" target="_blank">
+                    <img src="maizena.jpg.webp" alt="Maizena">
+                </a>
+                <p>4 cucharadas de maizena</p>
+            </div>
+        </div>
+        <div class="prep">
+            <h2 class="subtitulo">Preparación</h2>
+           <li><p>Para poder preparar un pay de queso se tienen que seguir las siguientes instrucciones:</p></li> 
+            <ol>
+                <li>Tritura las galletas y mézclalas con la mantequilla derretida. Coloca la mezcla en un molde como base.</li>
+                <li>Licúa el queso crema, la leche condensada, leche evaporada, media crema, vainilla, huevos y la maizena hasta obtener una mezcla homogénea.</li>
+                <li>Vierte la mezcla sobre la base de galleta.</li>
+                <li>Hornea a 180 °C durante 40 a 50 minutos o hasta que cuaje.</li>
+                <li>Deja enfriar y refrigera al menos 2 horas antes de servir.</li>
+            </ol>
+        </div>
+    </div>
+     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slide");
+            const next = document.querySelector(".next");
+            const prev = document.querySelector(".prev");
+            let current = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove("activo");
+                    if (i === index) slide.classList.add("activo");
+                });
+            }
+
+            next.addEventListener("click", () => {
+                current = (current + 1) % slides.length;
+                showSlide(current);
+            });
+
+            prev.addEventListener("click", () => {
+                current = (current - 1 + slides.length) % slides.length;
+                showSlide(current);
+            });
+        });
+    </script>
+</body>
+</html>
+

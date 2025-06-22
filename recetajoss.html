@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enchiladas Moradas</title>
+    <link rel="stylesheet" href="css.css">
+   <link rel="icon" href="ICON.jpg" type="image/jpg">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Receta: Enchiladas Verdes</h1>
+
+        <div class="carrusel">
+            <img src="enchiladas1.jpg" class="slide activo" alt="Enchiladas 1">
+            <img src="enchiladas2.jpg" class="slide" alt="Enchiladas 2">
+            <img src="enchiladas3.jpg" class="slide" alt="Enchiladas 3">
+            <div class="prev" onclick="cambiarSlide(-1)">‹</div>
+            <div class="next" onclick="cambiarSlide(1)">›</div>
+        </div>
+
+        <h2 class="subtitulo">Ingredientes</h2>
+        <div class="ingredientes">
+            <div class="item"><img src="tortilla.png"><p>Tortillas</p></div>
+            <div class="item"><img src="tomate.png"><p>Tomates</p></div>
+            <div class="item"><img src="cebolla.png"><p>Cebolla</p></div>
+            <div class="item"><img src="chile.png"><p>Chiles</p></div>
+            <div class="item"><img src="ajo.png"><p>Ajo</p></div>
+            <div class="item"><img src="pollo.png"><p>Pollo</p></div>
+        </div>
+
+        <h2 class="subtitulo">Pasos</h2>
+        <div class="pasos">
+                <li><div class="paso">1. Lava y desinfecta todos los vegetales.</div></li>
+                <li><div class="paso">2. Licúa los ingredientes y sofríe la salsa.</div></li>
+                <li><div class="paso">3. Enrolla las tortillas con el pollo.</div></li>
+                <li><div class="paso">4. Baña con la salsa y sirve con amor.</div></li>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function mostrarSlide(n) {
+            slides.forEach(s => s.classList.remove("activo"));
+            slideIndex = (n + slides.length) % slides.length;
+            slides[slideIndex].classList.add("activo");
+        }
+
+        function cambiarSlide(n) {
+            mostrarSlide(slideIndex + n);
+        }
+
+        setInterval(() => cambiarSlide(1), 4000);
+    </script>
+</body>
+</html>

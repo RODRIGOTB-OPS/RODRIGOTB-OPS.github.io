@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'FUENTEBONITA';
+    src: url(/fuentes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'FUENTEBONITA2';
+    src: url(/fuentes/Backso.ttf) format('truetype');
+}
+
+/* Styles for elements with the 'caja' class */
+.caja {
+    background-color: rgb(0, 145, 255); /* Blue background */
+    width: 200px; /* Set width to 200px */
+    height: 200px; /* Set height to 200px */
+    margin: 20px;
+    padding: 100px;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    color: black;
+    font-family: FUENTEBONITA, Courier, monospace;
+}
+
+
+.cajamediana {
+    background-color: rgb(4, 194, 90); /* Blue background */
+    width: 200px; /* Set width to 200px */
+    height: 200px; /* Set height to 200px */
+    margin: 20px;
+    padding: 100px;
+    border: black
+    border-style: solid;
+    border-width: 40px;
+    border-radius: 50px;
+    color: black;
+    font-family: FUENTEBONITA2, Courier, monospace;
+}
+.cajaGrande {
+    background-color: rgba(233, 250, 82, 0.793); /* Blue background */
+    
+    margin: 30px;
+    padding: 200px;
+}
+
+h1{
+    background-color: rgb(50, 230, 250);
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    width: 100px;
+    height: 100px;
+    border: rgba(51, 98, 192, 0.788);
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: FUENTEBONITA, Courier, monospace;
+}   

@@ -1,0 +1,208 @@
+@font-face {
+    /* Define una fuente personalizada llamada 'FUENTEBONITA' */
+    font-family: 'FUENTEBONITA';
+    src: url(/fuentes/Backso.ttf) format('truetype');
+}
+body {
+    /* Estilos generales del cuerpo: fuente, fondo, color de texto y centrado */
+    font-family: Arial, sans-serif;
+    background-image: url(/css/FONDO.jpg);
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    /* Estilo para los elementos de lista */
+    font-family: Arial, sans-serif;
+    font-size: large;
+    color: #000;
+    font-weight: bold;
+}
+h1,H2,H3 {
+    /* Estilo para títulos principales y secundarios */
+    font-family: FUENTEBONITA, Courier, monospace;
+    color: #a62a4b;
+    text-shadow: 2px 2px 5px rgb(255, 213, 213);
+}
+.contenedor {
+    /* Contenedor principal centrado y con fondo degradado */
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(135deg, #ffe168ca, #fae4b6);
+    border: 3px solid #a6742a;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.titulo {
+    /* Estilo para el título principal */
+    font-size: 36px;
+    background: linear-gradient(90deg, #fff0d4, #ffe8a0);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #a6742a;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.subtitulo {
+    /* Estilo para subtítulos */
+    font-size: 24px;
+    background: linear-gradient(90deg, #fff0d4, #ffe8a0);
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #a6742a;
+    display: inline-block;
+    margin: 25px 0 15px;
+}
+.carrusel {
+    /* Contenedor del carrusel de imágenes */
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border: 3px solid #a6742a;
+    border-radius: 20px;
+}
+.slide {
+    /* Estilo para cada imagen del carrusel */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.slide.activo {
+    /* Muestra la imagen activa del carrusel */
+    display: block;
+}
+.prev, .next {
+    /* Botones de navegación del carrusel */
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(135deg, #fff0d4, #ffd88a);
+    border: 2px solid #a6742a;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.ingredientes {
+    /* Contenedor de ingredientes en formato flexible */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.item {
+    /* Estilo para cada ingrediente */
+    background: linear-gradient(135deg, #fff6e2, #ffe8a0);
+    border: 2px solid #a6742a;
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+.item:hover {
+    /* Efecto al pasar el mouse sobre un ingrediente */
+    transform: scale(1.05);
+}
+.item img {
+    /* Imagen de cada ingrediente */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #a6742a;
+}
+.item p {
+    /* Texto del ingrediente */
+    font-weight: 600;
+    margin: 0;
+}
+.prep {
+    /* Contenedor de la sección de preparación */
+    max-width: 800px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #ffecc2, #ffe596);
+    border: 2px solid #a6742a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    font-family: 'Poppins', sans-serif;
+}
+.prep h2 {
+    /* Título de la sección de preparación */
+    text-align: center;
+    margin-bottom: 15px;
+}
+.prep ol {
+    /* Lista ordenada de pasos de preparación */
+    padding-left: 20px;
+    line-height: 1.6;
+}
+.prep li {
+    /* Elementos de la lista de pasos */
+    margin-bottom: 10px;
+}
+.pasos {
+    /* Contenedor de los pasos de preparación */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.paso {
+    /* Estilo para cada paso */
+    background: linear-gradient(135deg, #fff6e2, #ffe8a0);
+    border: 2px solid #a6742a;
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.registro {
+    /* Contenedor del formulario de registro */
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.registro input {
+    /* Campos de entrada del formulario */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.registro button {
+    /* Botón del formulario */
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff6b81;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}

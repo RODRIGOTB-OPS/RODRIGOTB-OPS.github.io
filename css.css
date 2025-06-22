@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Decorativa';
+    src: url('fuentes/Backso.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondojoss.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #050106;
+    text-align: center;
+}
+
+
+li{
+font-family: 'Courier New', Courier, monospace;
+font-size: large;
+color: #ffffff;
+    
+}
+h1, h2, h3 {
+    font-family: 'Decorativa', cursive;
+    color: #ffffffd1;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(135deg, #000000, #222222);
+    border: 3px solid #5a555d;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 36px;
+    background: linear-gradient(90deg, #777777, #433947);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #787878;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    background: linear-gradient(90deg, #594f5f, #525252);
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #868686;
+    display: inline-block;
+    margin: 25px 0 15px;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.15);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.activo {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(135deg, #816d8b, #4b4152);
+    border: 2px solid #6b6b6b;
+    color: #252525;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.item {
+    background: linear-gradient(135deg, #fceaff, #ffffff);
+    border: 2px solid #b
+    
+    
